@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/main.js" defer></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<title>Weather App</title>
+</head>
+<body>
+    <h1>Welcome to the Weather App! ☀️</h1>
+    <h3>Input a location to get the weather there below...</h3>
+    <form name="testData" id="testDataForm">
+        <div class="top1">
+            <br>
+            <div class="input-group mb-3">
+                <input type="text" name="city" id="city" class="form-control" placeholder="City" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <button type="submit" class="btn btn-outline-secondary" type="button">Search</button>
+                <div class="input-group-append">
+            </div>
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" name="zip" id="zip" class="form-control" placeholder="ZIP Code" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <button type="submit1" class="btn btn-outline-secondary" type="button">Search</button>
+                <div class="input-group-append">
+            </div>
+            
+        </div>  
+        <div class="button1">
+            <br>
+            <button type="clear" id="clearButton" onclick="clear_data()">Clear</button>
+            
+        </div>
+        <div class="bottom1">
+            <section class="list-group location-list mt-3"></section>
+        </div>
+    </form>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
